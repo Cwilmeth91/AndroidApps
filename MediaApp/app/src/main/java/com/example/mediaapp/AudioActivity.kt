@@ -1,3 +1,5 @@
+package com.example.mediaapp
+
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
@@ -5,7 +7,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediaapp.R
 import java.util.Random
 
 class AudioActivity : AppCompatActivity() {

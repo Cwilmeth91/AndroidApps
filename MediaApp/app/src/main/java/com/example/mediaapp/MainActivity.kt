@@ -1,10 +1,11 @@
+package com.example.mediaapp
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediaapp.CalcActivity
-import com.example.mediaapp.R
+
 
 class MainActivity : AppCompatActivity() {
 

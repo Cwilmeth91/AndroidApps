@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android Localization Guide</string>
+    <string name="this_is_my_first_android_localization_project">This is my first Android localization project!</string>
+</resources>
