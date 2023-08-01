@@ -17,11 +17,12 @@ class MainActivity : AppCompatActivity() {
     //use menu/main.xml for menu instead of default menu, triggered when user clicks menu icon
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main, menu)
+        menu.removeItem(R.id.menu_home)
         return true
     }
     //this handles when the user clicks an option in the menu/ use ID to verify activity and navigate to Activity with Intents
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // We have 3 different activities to Handle via Menus
+        // We have 4 different activities to Handle via Menus
         when (item.itemId) {
             R.id.menu_game -> {
                 val audioIntent = Intent(this, AudioActivity::class.java)
@@ -34,6 +35,10 @@ class MainActivity : AppCompatActivity() {
             R.id.menu_calc -> {
                 val calcIntent = Intent(this, CalcActivity::class.java)
                 startActivity(calcIntent)
+            }
+            R.id.menu_home -> {
+                val homeIntent = Intent(this, MainActivity::class.java)
+                startActivity(homeIntent)
             }
         }
         return true

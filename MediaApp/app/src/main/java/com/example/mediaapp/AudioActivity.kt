@@ -1,7 +1,10 @@
 package com.example.mediaapp
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -29,9 +32,39 @@ class AudioActivity : AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main, menu)
+        menu.removeItem(R.id.menu_game)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // We have 4 different activities to Handle via Menus
+        when (item.itemId) {
+            R.id.menu_game -> {
+                val audioIntent = Intent(this, AudioActivity::class.java)
+                startActivity(audioIntent)
+            }
+            R.id.menu_pictures -> {
+                val pictureIntent = Intent(this, PictureActivity::class.java)
+                startActivity(pictureIntent)
+            }
+            R.id.menu_calc -> {
+                val calcIntent = Intent(this, CalcActivity::class.java)
+                startActivity(calcIntent)
+            }
+            R.id.menu_home -> {
+                val homeIntent = Intent(this, MainActivity::class.java)
+                startActivity(homeIntent)
+            }
+        }
+        return true
+    }
+
     private fun onGuessButtonClicked() {
         val randNum = Random()
-        val random = randNum.nextInt(5) + 1
+        val random = randNum.nextInt(20) + 1
+        result = findViewById(R.id.randoNum)
 
         val userChoice = number.text.toString().trim().toIntOrNull()
 
@@ -40,10 +73,12 @@ class AudioActivity : AppCompatActivity() {
             return
         }
 
-        if (userChoice < 1 || userChoice > 5) {
-            Toast.makeText(this, "Please guess a number between 1 and 5.", Toast.LENGTH_SHORT).show()
+        if (userChoice < 1 || userChoice > 20) {
+            Toast.makeText(this, "Please guess a number between 1 and 20.", Toast.LENGTH_SHORT).show()
             return
         }
+
+        result.text = "The Random Number this time was: $random"
 
         if (userChoice == random) {
             if (success.isPlaying) {

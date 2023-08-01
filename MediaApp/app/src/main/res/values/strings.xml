@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">MediaApp</string>
+    <string name="app_name">Media App Home</string>
+    <string name="amount_of_stock_owned">Amount Of Stock Owned</string>
+    <string name="owned_stock_average_price">Owned Stock Average Price</string>
+    <string name="stock_current_price">Stock Current Price</string>
+    <string name="calculate">Calculate</string>
+    <string name="invalid_input_please_enter_valid_values">Invalid input. Please enter valid values.</string>
+    <string name="congratulations_stocks">Congratulations! You don\'t need to buy any more stocks.</string>
+    <string name="pick_a_number_between">Guess a number between 1 and 20</string>
+    <string name="submit_guess">Submit Guess</string>
+    <string name="welcome_message">Welcome To my Sample Media App. Click the breadcrumbs in the top right and choose an activity</string>
 </resources>

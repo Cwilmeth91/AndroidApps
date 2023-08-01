@@ -19,42 +19,26 @@
             android:theme="@style/Theme.MediaApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="CalcActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Stock Average Down Calculator"
             android:theme="@style/Theme.MediaApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="AudioActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Number Guessing Game"
             android:theme="@style/Theme.MediaApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="PictureActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="Picture Viewer"
             android:theme="@style/Theme.MediaApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

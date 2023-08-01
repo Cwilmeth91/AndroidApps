@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:title="Home"
+        android:id="@+id/menu_home"
+        android:orderInCategory="1"
+        >
+    </item>
+    <item
         android:title="Pictures"
         android:id="@+id/menu_pictures"
-        android:orderInCategory="1"
+        android:orderInCategory="2"
         >
     </item>
     <item
         android:title="Guessing Game"
         android:id="@+id/menu_game"
-        android:orderInCategory="2"
+        android:orderInCategory="3"
         >
     </item>
     <item
         android:title="Stock Average Calculator"
         android:id="@+id/menu_calc"
-        android:orderInCategory="3"
+        android:orderInCategory="4"
         >
     </item>
 </menu>

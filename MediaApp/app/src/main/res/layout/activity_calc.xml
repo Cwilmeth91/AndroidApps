@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bought Stock Amount" />
+        android:text="@string/amount_of_stock_owned" />
 
     <EditText
         android:id="@+id/etBoughtStockAmount"
@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bought Stock Price" />
+        android:text="@string/owned_stock_average_price" />
 
     <EditText
         android:id="@+id/etBoughtStockPrice"
@@ -31,22 +31,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Current Stock Price" />
+        android:text="@string/stock_current_price" />
 
     <EditText
         android:id="@+id/etCurrentStockPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        />
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate" />
+        android:text="@string/calculate" />
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/etStockCalcResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp" />
